@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Estrutura principal com Flexbox */
+.painel {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    width: 260px;
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+.logo {
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-menu {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+
+.item-menu:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cabecalho-esq h2 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.cabecalho-esq p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.cabecalho-dir {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nome-usuario {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.avatar-usuario {
+    width: 42px;
+    height: 42px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Seção de Indicadores */
+.secao-indicadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cartao-indicador {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.valor-indicador {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.descricao-indicador {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Seção de Horários */
+.secao-horarios {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.secao-horarios h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.lista-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linha-horario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    border: 1px solid #edf2f7;
+}
+
+.horario {
+    font-weight: bold;
+    color: #3182ce;
+    width: 80px;
+}
+
+.atividade {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.sala {
+    color: #718096;
+    width: 80px;
+    text-align: right;
+}
+
+/* Rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    font-size: 13px;
+    color: #718096;
+    border-top: 1px solid #e2e8f0;
+    margin-top: auto;
+}
